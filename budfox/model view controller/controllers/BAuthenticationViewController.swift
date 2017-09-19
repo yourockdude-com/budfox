@@ -25,6 +25,8 @@ class BAuthenticationViewController: UIViewController, UITextFieldDelegate, BCou
     
     @IBOutlet weak var selectCountryBLC: NSLayoutConstraint!
     
+    var country: BCountry?
+    
     // MARK: Override func
     
     override func viewDidLoad() {
@@ -64,7 +66,7 @@ class BAuthenticationViewController: UIViewController, UITextFieldDelegate, BCou
         getCodeButton.setTitle(NSLocalizedString("b_get_code", comment: ""), for: .normal)
         mobileNumberTextField.placeholder = NSLocalizedString("pl_your_mobile_number", comment: "")
         mobileNumberTextField.delegate = FALTextFieldMask.getInstance()
-        mobileNumberTextField.mask = "NNN NN NN"
+        mobileNumberTextField.textMask = "NNN NNN NN NN"
         codeLabel.text = NSLocalizedString("l_code", comment: "")
         descriptionLabel.text = NSLocalizedString("l_description", comment: "")
     }
@@ -79,12 +81,16 @@ class BAuthenticationViewController: UIViewController, UITextFieldDelegate, BCou
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
+    func enableGetButton() {
+        let textField = mobileNumberTextField
+        getCodeButton.isEnabled = textField?.text?.characters.count == textField?.textMask.characters.count && country != nil
+    }
+    
     // MARK: Observers
     
     func keyboardWiilShow(_ notification: NSNotification) {
         let duration: TimeInterval = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
         let keyboardHeight: CGFloat = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! CGRect).size.height
-        print(keyboardHeight)
         UIView.animate(withDuration: duration,
                        delay: 0.0,
                        options: .curveEaseOut,
@@ -112,8 +118,10 @@ class BAuthenticationViewController: UIViewController, UITextFieldDelegate, BCou
     // MARK: BCountriesViewControllerDelegate
     
     func didSelectCountry(_ country: BCountry) {
+        self.country = country
         selectCountryButton.setTitle(country.name, for: .normal)
         codeLabel.text = country.code
+        enableGetButton()
     }
     
     // MARK: Actions
@@ -135,8 +143,13 @@ class BAuthenticationViewController: UIViewController, UITextFieldDelegate, BCou
          * Else show message with error description and try again button or cancel
          *
          */
+        
+        print("TODO: ...")
+        
     }
     
-    // TODO: Applying mask then enter mobile phone - "### ## ##"
+    @IBAction func mobileNumberTextField_EC(_ sender: UITextField) {
+        enableGetButton()
+    }
     
 }
