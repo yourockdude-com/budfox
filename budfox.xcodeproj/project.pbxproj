@@ -20,6 +20,8 @@
 		C795C6AF1F701183001BEAE9 /* BCountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795C6AE1F701183001BEAE9 /* BCountriesModel.swift */; };
 		C795C6B31F7017B1001BEAE9 /* BCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795C6B11F7017B1001BEAE9 /* BCountryTableViewCell.swift */; };
 		C795C6B41F7017B1001BEAE9 /* BCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C795C6B21F7017B1001BEAE9 /* BCountryTableViewCell.xib */; };
+		C7CB761C1F713A7900210083 /* FALTextFieldMask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB761A1F713A7900210083 /* FALTextFieldMask+Extensions.swift */; };
+		C7CB761D1F713A7900210083 /* FALTextFieldMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB761B1F713A7900210083 /* FALTextFieldMask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		C795C6AE1F701183001BEAE9 /* BCountriesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCountriesModel.swift; sourceTree = "<group>"; };
 		C795C6B11F7017B1001BEAE9 /* BCountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCountryTableViewCell.swift; sourceTree = "<group>"; };
 		C795C6B21F7017B1001BEAE9 /* BCountryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BCountryTableViewCell.xib; sourceTree = "<group>"; };
+		C7CB761A1F713A7900210083 /* FALTextFieldMask+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FALTextFieldMask+Extensions.swift"; sourceTree = "<group>"; };
+		C7CB761B1F713A7900210083 /* FALTextFieldMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FALTextFieldMask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				C795C68E1F6FEDE9001BEAE9 /* model view controller */,
 				C795C69B1F6FF76C001BEAE9 /* resources */,
 				C795C6B01F701795001BEAE9 /* table view cells */,
+				C7CB76181F713A7900210083 /* third party */,
 				C795C6921F6FEDE9001BEAE9 /* utils */,
 			);
 			path = budfox;
@@ -161,6 +166,23 @@
 			path = "table view cells";
 			sourceTree = "<group>";
 		};
+		C7CB76181F713A7900210083 /* third party */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB76191F713A7900210083 /* FALTextFieldMask */,
+			);
+			path = "third party";
+			sourceTree = "<group>";
+		};
+		C7CB76191F713A7900210083 /* FALTextFieldMask */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB761A1F713A7900210083 /* FALTextFieldMask+Extensions.swift */,
+				C7CB761B1F713A7900210083 /* FALTextFieldMask.swift */,
+			);
+			path = FALTextFieldMask;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,11 +261,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C795C6AF1F701183001BEAE9 /* BCountriesModel.swift in Sources */,
+				C7CB761D1F713A7900210083 /* FALTextFieldMask.swift in Sources */,
 				C795C6B31F7017B1001BEAE9 /* BCountryTableViewCell.swift in Sources */,
 				C795C67D1F6FECFB001BEAE9 /* AppDelegate.swift in Sources */,
 				C795C69A1F6FF3AF001BEAE9 /* BButton.swift in Sources */,
 				C795C6AB1F701052001BEAE9 /* BCountriesViewController.swift in Sources */,
 				C795C6981F6FF259001BEAE9 /* BAuthenticationViewController.swift in Sources */,
+				C7CB761C1F713A7900210083 /* FALTextFieldMask+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
