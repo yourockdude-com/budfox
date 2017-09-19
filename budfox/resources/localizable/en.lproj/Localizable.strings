@@ -1,0 +1,19 @@
+/* 
+  localizable.strings
+  budfox
+
+  Created by Vladimir Psyukalov on 18.09.17.
+  Copyright © 2017 YOUROCK INC. All rights reserved.
+*/
+
+"t_authentication" = "Authentication";
+"t_countries" = "Countries";
+
+"b_select_country" = "Select Country";
+
+"pl_your_mobile_number" = "Your Mobile Number";
+
+"l_code" = "Code";
+"l_description" = "We'll send you access code";
+
+"b_get_code" = "GET CODE";
