@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C74980051F71287D0029A134 /* FALTextFieldMask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74980031F71287D0029A134 /* FALTextFieldMask+Extensions.swift */; };
-		C74980061F71287D0029A134 /* FALTextFieldMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74980041F71287D0029A134 /* FALTextFieldMask.swift */; };
 		C795C67D1F6FECFB001BEAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795C67C1F6FECFB001BEAE9 /* AppDelegate.swift */; };
 		C795C6841F6FECFB001BEAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C795C6831F6FECFB001BEAE9 /* Assets.xcassets */; };
 		C795C6961F6FF238001BEAE9 /* BAuthenticationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C795C6951F6FF238001BEAE9 /* BAuthenticationView.xib */; };
@@ -25,8 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C74980031F71287D0029A134 /* FALTextFieldMask+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FALTextFieldMask+Extensions.swift"; sourceTree = "<group>"; };
-		C74980041F71287D0029A134 /* FALTextFieldMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FALTextFieldMask.swift; sourceTree = "<group>"; };
 		C795C6791F6FECFB001BEAE9 /* budfox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = budfox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C795C67C1F6FECFB001BEAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C795C6831F6FECFB001BEAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,23 +52,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C74980011F71287D0029A134 /* third party */ = {
-			isa = PBXGroup;
-			children = (
-				C74980021F71287D0029A134 /* FALTextFieldMask */,
-			);
-			path = "third party";
-			sourceTree = "<group>";
-		};
-		C74980021F71287D0029A134 /* FALTextFieldMask */ = {
-			isa = PBXGroup;
-			children = (
-				C74980031F71287D0029A134 /* FALTextFieldMask+Extensions.swift */,
-				C74980041F71287D0029A134 /* FALTextFieldMask.swift */,
-			);
-			path = FALTextFieldMask;
-			sourceTree = "<group>";
-		};
 		C795C6701F6FECFB001BEAE9 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +77,6 @@
 				C795C68E1F6FEDE9001BEAE9 /* model view controller */,
 				C795C69B1F6FF76C001BEAE9 /* resources */,
 				C795C6B01F701795001BEAE9 /* table view cells */,
-				C74980011F71287D0029A134 /* third party */,
 				C795C6921F6FEDE9001BEAE9 /* utils */,
 			);
 			path = budfox;
@@ -261,13 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C795C6AF1F701183001BEAE9 /* BCountriesModel.swift in Sources */,
-				C74980061F71287D0029A134 /* FALTextFieldMask.swift in Sources */,
 				C795C6B31F7017B1001BEAE9 /* BCountryTableViewCell.swift in Sources */,
 				C795C67D1F6FECFB001BEAE9 /* AppDelegate.swift in Sources */,
 				C795C69A1F6FF3AF001BEAE9 /* BButton.swift in Sources */,
 				C795C6AB1F701052001BEAE9 /* BCountriesViewController.swift in Sources */,
 				C795C6981F6FF259001BEAE9 /* BAuthenticationViewController.swift in Sources */,
-				C74980051F71287D0029A134 /* FALTextFieldMask+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
